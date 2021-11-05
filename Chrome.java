@@ -25,7 +25,9 @@ public class Chrome {
 		driver.findElement(By.id("pass")).sendKeys("12345");
 		driver.findElement(By.linkText("पासवर्ड भूल गए?")).click();
 		
-		
+	
+
+	
 		
 	}
 
