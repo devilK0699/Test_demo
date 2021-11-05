@@ -40,7 +40,7 @@ public class Amazon {
 		
 		
 		
-		String save=driver.findElement(By.xpath("//div[@data-asin='B08SC2ZTDP']//div[@class='a-row a-size-base a-color-base']/span[text()='Save ₹2,500 (17%)']")).getText();
+		String save=driver.findElement(By.xpath("//div[@data-asin='B08SC2ZTDP']//div[@class='a-row a-size-base a-color-base']/span[text()='Save ₹2,600 (17%)']")).getText();
 		System.out.println("You are saving : "+save);
 		
 		String sub2=price.replace(",", "");
@@ -63,7 +63,7 @@ public class Amazon {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 
-		String price2=driver.findElement(By.xpath("//div[@id='ppd']//div[@id='price']//span[@id='priceblock_ourprice']")).getText();
+		String price2=driver.findElement(By.xpath("//div[@id='ppd']//div[@id='price']//td[@class='a-span12']//span[@id='priceblock_dealprice']")).getText();
 		
 		String sub1=price2.substring(1).replace(",", "");
 		System.out.println("price2: "+sub1);
